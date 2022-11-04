@@ -22,7 +22,24 @@ namespace Parcheggio
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (txtusuario.Text != "" && txtcontra.Text != "")
+            
+        }
+        private void pictureback_Click(object sender, EventArgs e)
+        {
+            back = new Primera();
+            back.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            irRegis = new Registro();
+            irRegis.Show();
+        }
+
+        private void btniniciarsesion_Click(object sender, EventArgs e)
+        {
+            if (txtusuario.Text == "emma" && txtcontra.Text == "2001")
             {
                 irpagPrincipal = new PagPrincipal();
                 irpagPrincipal.Show();
@@ -32,18 +49,6 @@ namespace Parcheggio
             {
                 MessageBox.Show("Los datos ingresados son incorrectos");
             }
-        }
-
-        private void pictureback_Click(object sender, EventArgs e)
-        {
-            back = new Primera();
-            back.Show();
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            irRegis = new Registro();
-            irRegis.Show();
         }
     }
 }

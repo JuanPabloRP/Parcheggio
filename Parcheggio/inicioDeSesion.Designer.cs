@@ -43,7 +43,7 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(458, 179);
+            this.txtusuario.Location = new System.Drawing.Point(460, 180);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(181, 22);
             this.txtusuario.TabIndex = 0;
@@ -115,6 +115,7 @@
             this.btniniciarsesion.TabIndex = 7;
             this.btniniciarsesion.Text = "Iniciar sesión";
             this.btniniciarsesion.UseVisualStyleBackColor = true;
+            this.btniniciarsesion.Click += new System.EventHandler(this.btniniciarsesion_Click);
             // 
             // pictureback
             // 
