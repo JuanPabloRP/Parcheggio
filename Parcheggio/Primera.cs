@@ -18,6 +18,7 @@ namespace Parcheggio
         public Primera()
         {
             InitializeComponent();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,6 +34,21 @@ namespace Parcheggio
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            inicioDeSesion PI = new inicioDeSesion();
+            this.Hide();
+            PI.Show();  
+
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            Registro Reg = new Registro();
+            this.Hide();
+            Reg.Show();
         }
     }
 }
