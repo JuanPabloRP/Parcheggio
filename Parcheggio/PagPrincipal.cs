@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Parcheggio
 {
-    public partial class Form1 : Form
+    public partial class PagPrincipal : Form
     {
-        public Form1()
+        public PagPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
