@@ -12,6 +12,9 @@ namespace Parcheggio
 {
     public partial class Primera : Form
     {
+
+        inicioDeSesion inicio;
+        Registro Registrarse;
         public Primera()
         {
             InitializeComponent();
@@ -19,7 +22,17 @@ namespace Parcheggio
 
         private void label1_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
