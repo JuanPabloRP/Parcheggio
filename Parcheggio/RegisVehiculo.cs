@@ -16,5 +16,11 @@ namespace Parcheggio
         {
             InitializeComponent();
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbTipoVehi.Items.Add("Automovil");
+            cbTipoVehi.Items.Add("Motocicleta");
+        }
     }
 }
