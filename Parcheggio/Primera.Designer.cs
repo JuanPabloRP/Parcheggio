@@ -1,6 +1,6 @@
 ﻿namespace Parcheggio
 {
-    partial class Form1
+    partial class Primera
     {
         /// <summary>
         /// Variable del diseñador necesaria.
