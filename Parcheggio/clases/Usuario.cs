@@ -24,6 +24,7 @@ namespace Parcheggio.clases
             confirmPassword = _confirmPassword;
         }
 
+
         //esto sirve para el login
         public bool validar(string user, string pass)
         {

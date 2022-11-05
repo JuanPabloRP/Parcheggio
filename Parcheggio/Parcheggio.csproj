@@ -93,6 +93,9 @@
     <Compile Include="RegisVehiculo.Designer.cs">
       <DependentUpon>RegisVehiculo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CobroTiempo.resx">
+      <DependentUpon>CobroTiempo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Primera.resx">
       <DependentUpon>Primera.cs</DependentUpon>
     </EmbeddedResource>

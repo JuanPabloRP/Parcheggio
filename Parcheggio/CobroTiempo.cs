@@ -12,9 +12,24 @@ namespace Parcheggio
 {
     public partial class CobroTiempo : Form
     {
+        PagPrincipal Pp;
+
         public CobroTiempo()
         {
             InitializeComponent();
+        }
+
+        private void CobroTiempo_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Pp = new PagPrincipal();
+            this.Hide();
+            Pp.Show();
         }
     }
 }

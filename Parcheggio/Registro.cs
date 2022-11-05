@@ -23,11 +23,14 @@ namespace Parcheggio
         inicioDeSesion irInicarSesion;
         Primera primeraPagina;
 
-        private int svg;
+        
 
         public Registro()
         {
             InitializeComponent();
+
+            //this.MaximumSize(this.Height, this.Width);
+            
 
 
             //para centrar algunos componentes
@@ -185,6 +188,9 @@ namespace Parcheggio
 
         }
 
+        private void Registro_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
