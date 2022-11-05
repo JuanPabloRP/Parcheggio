@@ -48,7 +48,7 @@ namespace Parcheggio
         {
             
 
-            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
+            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt", append: true);
 
             foreach (Usuario u in usuarios)
             {
