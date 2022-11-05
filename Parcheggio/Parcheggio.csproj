@@ -131,8 +131,9 @@
   <ItemGroup>
     <None Include="Resources\descarga.jpeg" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="utils\" />
+    <Content Include="utils\usuariosParcheggio.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

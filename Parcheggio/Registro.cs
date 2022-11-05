@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Parcheggio
 {
@@ -27,31 +28,54 @@ namespace Parcheggio
         public Registro()
         {
             InitializeComponent();
-            int x1 = 0, x2;
-
-            //un poco de matematicas, restando los anchos y dividiendo entre 2
-            x1 = (this.Width / 2) - (label1.Width / 2);
-
-            label1.Location = new System.Drawing.Point(x1, label1.Location.Y);
-
-            x2 = (this.Width / 2) - (btnRegistrarse.Width / 2);
-            btnRegistrarse.Location = new System.Drawing.Point(x2, btnRegistrarse.Location.Y);
 
 
+            //para centrar algunos componentes
+            List<Control> components = new List<Control>();
+            components.Add(label1);
+            components.Add(btnRegistrarse);
+            components.Add(label6);
+            components.Add(linkLabel1);
+
+            centrarComponent(components);
+            
+        }
+
+        //metodos propios
+
+        //pa llenar el archivo plano con los datos del usuario
+        public void llenarArc()
+        {
+            
+
+            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
+
+            foreach (Usuario u in usuarios)
+            {
+                sw.WriteLine($"{u.id}|{u.name}|{u.username}|{u.password}|{u.confirmPassword}" );
+            }
+            sw.Close();
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        //si el componente se quiere centrar, este metodo lo hace
+        public void centrarComponent(List<Control> components)
         {
 
+            int x = 0;
 
+            foreach (Control component in components)
+            {
+                //un poco de matematicas, restando los anchos y dividiendo entre 2    
+                x = (this.Width / 2) - (component.Width / 2);
+                component.Location = new System.Drawing.Point(x, component.Location.Y);
+            }
+            
+            
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        
+        //metodos de windows form con alguna funcionalidad
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             Random n = new Random();
@@ -101,7 +125,7 @@ namespace Parcheggio
                     if (usernameRepetido == false)
                     {
                         usuarios.Add(new Usuario(id, txtName.Text, txtUsername.Text, txtPassword.Text, txtConfirmPassword.Text));
-
+                        llenarArc();
                         MessageBox.Show("Usuario registrado :)");
                         txtName.Clear();
                         txtUsername.Clear();
@@ -125,10 +149,6 @@ namespace Parcheggio
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -145,5 +165,26 @@ namespace Parcheggio
 
             
         }
+
+
+
+        //metodos de windows form sin ninguna funcionalidad (NO se pueden borrar)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
