@@ -29,8 +29,7 @@ namespace Parcheggio
         {
             InitializeComponent();
 
-            //this.MaximumSize(this.Height, this.Width);
-            
+            leerArc();
 
 
             //para centrar algunos componentes
@@ -51,7 +50,7 @@ namespace Parcheggio
         {
             
 
-            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt", append: true);
+            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
 
             foreach (Usuario u in usuarios)
             {
@@ -59,6 +58,29 @@ namespace Parcheggio
             }
             sw.Close();
 
+        }
+
+        public void leerArc()
+        {
+            StreamReader sr = new StreamReader("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
+            string linea;
+            linea = sr.ReadLine();
+
+            while (linea != null)
+            {
+                string[] vec = linea.Split('|');
+                try
+                {
+                    usuarios.Add(new Usuario(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4]));
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Error: " + e);
+                }
+                
+                linea = sr.ReadLine();
+            }
+            sr.Close();
         }
 
         //si el componente se quiere centrar, este metodo lo hace
@@ -81,6 +103,8 @@ namespace Parcheggio
         //metodos de windows form con alguna funcionalidad
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
+            
+
             Random n = new Random();
             int id = 0;
             bool idRepetido = false;
