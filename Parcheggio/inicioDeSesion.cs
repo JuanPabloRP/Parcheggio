@@ -14,25 +14,21 @@ namespace Parcheggio
 {
     public partial class inicioDeSesion : Form
     {
-        
+        List<Usuario> usuarios = Usuario.usuarios;
 
         Primera back;
         Registro irRegis;
         PagPrincipal irpagPrincipal;
+        RegisVehiculo regvehi; 
         public inicioDeSesion()
         {
             InitializeComponent();
+            leerArc();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }
-        private void pictureback_Click(object sender, EventArgs e)
-        {
-            back = new Primera();
-            back.Show();
-            this.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -42,34 +38,79 @@ namespace Parcheggio
             this.Hide();
         }
 
-        private void btniniciarsesion_Click(object sender, EventArgs e)
+        public void llenarArc()
         {
 
-            bool res = false;
-            foreach (Usuario user in irRegis.usuarios)
+            StreamWriter sw = new StreamWriter("..\\..\\utils\\usuariosParcheggio.txt");
+
+            foreach (Usuario u in usuarios)
             {
-                res = user.validar(txtusuario.Text, txtcontra.Text);
-                if (res == true)
+                sw.WriteLine($"{u.id}|{u.name}|{u.username}|{u.password}|{u.confirmPassword}");
+            }
+            sw.Close();
+
+        }
+
+        public void leerArc()
+        {
+            StreamReader sr = new StreamReader("..\\..\\utils\\usuariosParcheggio.txt");
+            string linea;
+            linea = sr.ReadLine();
+
+            while (linea != null)
+            {
+                string[] vec = linea.Split('|');
+                try
                 {
-                    break;
+                    usuarios.Add(new Usuario(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4]));
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error: " + e);
+                }
+
+                linea = sr.ReadLine();
+            }
+            sr.Close();
+        }
+        private void btniniciarsesion_Click(object sender, EventArgs e)
+        {
+            bool ok = false;
+
+            foreach (Usuario usua in usuarios)
+            {
+                if (txtusuario.Text.Trim() == usua.username)
+                {
+                    if (txtcontra.Text.Trim() == usua.password)
+                    {
+                        ok = true;
+                        break;
+                    }
+                    else
+                    {
+                        ok = false;                       
+                    }
+                }
+                else
+                {
+                    ok = false;
                 }
             }
-
-            if (res == true)
+            if (ok)
             {
-                MessageBox.Show("Bienvenido :)");
-                irpagPrincipal = new PagPrincipal();
-                irpagPrincipal.Show();
-                this.Hide();
-
+                MessageBox.Show("Bienvenido");
             }
             else
             {
-                MessageBox.Show("Usuario y/o Contraseña es incorrecta");
+                MessageBox.Show("El usuario o la contraseña estan incorrectas");
             }
+        }
 
-            txtusuario.Text = "";
-            txtcontra.Clear();         
+        private void pictureback_Click_1(object sender, EventArgs e)
+        {
+            back = new Primera();
+            back.Show();
+            this.Hide();
         }
     }
 }

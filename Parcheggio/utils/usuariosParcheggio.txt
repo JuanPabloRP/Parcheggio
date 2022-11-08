@@ -1,3 +1,4 @@
 9744400|admin|admin|admin|admin
 2266187|Juan|juan|123|123
 1441064|emmanuel|emma|1234|1234
+6960877|sas|sas|sass|sass

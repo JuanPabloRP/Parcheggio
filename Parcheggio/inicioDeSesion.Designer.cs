@@ -37,10 +37,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btniniciarsesion = new System.Windows.Forms.Button();
-            this.pictureback = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).BeginInit();
+            this.pictureback = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).BeginInit();
             this.SuspendLayout();
             // 
             // txtusuario
@@ -119,17 +119,6 @@
             this.btniniciarsesion.UseVisualStyleBackColor = true;
             this.btniniciarsesion.Click += new System.EventHandler(this.btniniciarsesion_Click);
             // 
-            // pictureback
-            // 
-            this.pictureback.Image = ((System.Drawing.Image)(resources.GetObject("pictureback.Image")));
-            this.pictureback.Location = new System.Drawing.Point(12, 12);
-            this.pictureback.Name = "pictureback";
-            this.pictureback.Size = new System.Drawing.Size(54, 38);
-            this.pictureback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureback.TabIndex = 8;
-            this.pictureback.TabStop = false;
-            this.pictureback.Click += new System.EventHandler(this.pictureback_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
@@ -144,10 +133,24 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureback
+            // 
+            this.pictureback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureback.BackgroundImage")));
+            this.pictureback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureback.Location = new System.Drawing.Point(13, 13);
+            this.pictureback.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureback.Name = "pictureback";
+            this.pictureback.Size = new System.Drawing.Size(43, 37);
+            this.pictureback.TabIndex = 19;
+            this.pictureback.TabStop = false;
+            this.pictureback.Click += new System.EventHandler(this.pictureback_Click_1);
+            // 
             // inicioDeSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1127, 635);
             this.Controls.Add(this.pictureback);
             this.Controls.Add(this.btniniciarsesion);
@@ -160,11 +163,13 @@
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximumSize = new System.Drawing.Size(1145, 682);
+            this.MinimumSize = new System.Drawing.Size(1145, 682);
             this.Name = "inicioDeSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inicioDeSesion";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +185,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btniniciarsesion;
-        private System.Windows.Forms.PictureBox pictureback;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureback;
     }
 }
