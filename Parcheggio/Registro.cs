@@ -29,6 +29,7 @@ namespace Parcheggio
         {
             InitializeComponent();
 
+            //carga los datos de los usuarios en la lista usuarios para las validaciones en el registro
             leerArc();
 
 
@@ -50,7 +51,7 @@ namespace Parcheggio
         {
             
 
-            StreamWriter sw = new StreamWriter("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
+            StreamWriter sw = new StreamWriter("..\\..\\utils\\usuariosParcheggio.txt");
 
             foreach (Usuario u in usuarios)
             {
@@ -62,7 +63,7 @@ namespace Parcheggio
 
         public void leerArc()
         {
-            StreamReader sr = new StreamReader("C:\\Users\\USUARIO\\source\\repos\\Parcheggio\\Parcheggio\\utils\\usuariosParcheggio.txt");
+            StreamReader sr = new StreamReader("..\\..\\utils\\usuariosParcheggio.txt");
             string linea;
             linea = sr.ReadLine();
 
