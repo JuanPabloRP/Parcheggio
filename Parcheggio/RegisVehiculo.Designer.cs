@@ -127,6 +127,9 @@
             // 
             this.cbTipoVehi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbTipoVehi.FormattingEnabled = true;
+            this.cbTipoVehi.Items.AddRange(new object[] {
+            "Automovil\t",
+            "Motocicleta"});
             this.cbTipoVehi.Location = new System.Drawing.Point(160, 245);
             this.cbTipoVehi.Name = "cbTipoVehi";
             this.cbTipoVehi.Size = new System.Drawing.Size(119, 24);
@@ -149,7 +152,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RegisVehiculo";
-            this.Text = "RegisVehiculo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
