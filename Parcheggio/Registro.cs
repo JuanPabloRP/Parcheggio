@@ -13,13 +13,13 @@ using System.IO;
 namespace Parcheggio
 {
 
-    
+
 
     public partial class Registro : Form
     {
 
-        public List<Usuario> usuarios = new List<Usuario>();
-
+        List<Usuario> usuarios = Usuario.usuarios;
+        
         inicioDeSesion irInicarSesion;
         Primera primeraPagina;
 
@@ -49,7 +49,6 @@ namespace Parcheggio
         //pa llenar el archivo plano con los datos del usuario
         public void llenarArc()
         {
-            
 
             StreamWriter sw = new StreamWriter("..\\..\\utils\\usuariosParcheggio.txt");
 
