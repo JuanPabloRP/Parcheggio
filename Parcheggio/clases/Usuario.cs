@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcheggio.clases
+namespace Parcheggio
 {
+
     public class Usuario
     {
+
+        public static List<Usuario> usuarios = new List<Usuario>();
         public int id { get; set; }
         public string name { get; set; }
         public string username { get; set; }
