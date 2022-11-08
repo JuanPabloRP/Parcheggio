@@ -18,7 +18,7 @@ namespace Parcheggio
     public partial class Registro : Form
     {
 
-        List<Usuario> usuarios = new List<Usuario>();
+        public List<Usuario> usuarios = new List<Usuario>();
 
         inicioDeSesion irInicarSesion;
         Primera primeraPagina;
