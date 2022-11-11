@@ -46,7 +46,7 @@ namespace Parcheggio
         {
 
             bool res = false;
-            foreach (Usuario user in irRegis.usuarios)
+            foreach (Usuario user in Usuario.usuarios)
             {
                 res = user.validar(txtusuario.Text, txtcontra.Text);
                 if (res == true)
