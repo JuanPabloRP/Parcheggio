@@ -27,7 +27,7 @@ namespace Parcheggio
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Pp = new PagPrincipal();
+            Pp = new PagPrincipal(null);
             this.Hide();
             Pp.Show();
         }

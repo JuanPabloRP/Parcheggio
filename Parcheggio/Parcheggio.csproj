@@ -96,6 +96,9 @@
     <EmbeddedResource Include="CobroTiempo.resx">
       <DependentUpon>CobroTiempo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PagPrincipal.resx">
+      <DependentUpon>PagPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Primera.resx">
       <DependentUpon>Primera.cs</DependentUpon>
     </EmbeddedResource>
