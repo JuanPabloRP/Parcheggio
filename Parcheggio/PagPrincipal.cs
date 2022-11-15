@@ -23,41 +23,35 @@ namespace Parcheggio
         {
             InitializeComponent();
             user = _user;
-
             label1.Text = $"Bienvenido\n{user.name}";
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            primera = new Primera();
-
-            primera.Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-            //rV = new RegisVehiculo(user);
             rV = new RegisVehiculo();
             rV.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            //cT = new CobroTiempo(user);
-            cT = new CobroTiempo();
+            cT = new CobroTiempo(user);
+            this.Hide();
             cT.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            lD = new LugaresDispo(user);
+            lD.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //lD = new LugaresDispo(user);
-            lD = new LugaresDispo();
-            lD.Show();
+            primera = new Primera();
+            primera.Show();
             this.Hide();
         }
     }
