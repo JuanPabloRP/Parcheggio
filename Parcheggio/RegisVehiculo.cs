@@ -12,14 +12,31 @@ namespace Parcheggio
 {
     public partial class RegisVehiculo : Form
     {
-        public RegisVehiculo()
+
+        PagPrincipal Pp;
+        Usuario user;
+        public RegisVehiculo(Usuario user)
         {
             InitializeComponent();
+            this.user = user;
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Pp = new PagPrincipal(user);
+            this.Hide();
+            Pp.Show();
         }
     }
 }

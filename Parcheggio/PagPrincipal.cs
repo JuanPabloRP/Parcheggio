@@ -29,7 +29,7 @@ namespace Parcheggio
         
         private void button1_Click_1(object sender, EventArgs e)
         {
-            rV = new RegisVehiculo();
+            rV = new RegisVehiculo(user);
             rV.Show();
             this.Hide();
         }

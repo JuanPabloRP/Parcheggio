@@ -94,7 +94,7 @@
             this.txtCobrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.txtCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCobrar.ForeColor = System.Drawing.Color.Crimson;
+            this.txtCobrar.ForeColor = System.Drawing.Color.Black;
             this.txtCobrar.Location = new System.Drawing.Point(357, 280);
             this.txtCobrar.Name = "txtCobrar";
             this.txtCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
