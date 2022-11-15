@@ -16,6 +16,8 @@ namespace Parcheggio
     {
         List<Usuario> usuarios = Usuario.usuarios;
 
+        Usuario user;
+
         Primera back;
         Registro irRegis;
         PagPrincipal irpagPrincipal;
@@ -83,6 +85,7 @@ namespace Parcheggio
                 {
                     if (txtcontra.Text.Trim() == usua.password)
                     {
+                        user = usua;
                         ok = true;
                         break;
                     }
@@ -98,7 +101,10 @@ namespace Parcheggio
             }
             if (ok)
             {
-                MessageBox.Show("Bienvenido");
+                irpagPrincipal = new PagPrincipal(user);
+                irpagPrincipal.Show();
+                this.Hide();
+
             }
             else
             {

@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(283, 53);
+            this.label1.Location = new System.Drawing.Point(282, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 38);
             this.label1.TabIndex = 15;
@@ -94,7 +94,7 @@
             this.txtCobrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.txtCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCobrar.ForeColor = System.Drawing.Color.Crimson;
+            this.txtCobrar.ForeColor = System.Drawing.Color.Black;
             this.txtCobrar.Location = new System.Drawing.Point(357, 280);
             this.txtCobrar.Name = "txtCobrar";
             this.txtCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;

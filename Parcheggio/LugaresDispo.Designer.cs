@@ -28,12 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LugaresDispo));
+            this.pictureback = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureback
+            // 
+            this.pictureback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureback.BackgroundImage")));
+            this.pictureback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureback.Location = new System.Drawing.Point(13, 13);
+            this.pictureback.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureback.Name = "pictureback";
+            this.pictureback.Size = new System.Drawing.Size(34, 27);
+            this.pictureback.TabIndex = 23;
+            this.pictureback.TabStop = false;
+            this.pictureback.Click += new System.EventHandler(this.pictureback_Click);
+            // 
+            // LugaresDispo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureback);
+            this.Name = "LugaresDispo";
             this.Text = "LugaresDispo";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureback;
     }
 }

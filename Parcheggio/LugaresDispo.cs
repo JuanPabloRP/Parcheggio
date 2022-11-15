@@ -12,9 +12,26 @@ namespace Parcheggio
 {
     public partial class LugaresDispo : Form
     {
-        public LugaresDispo()
+        Usuario user;
+
+        PagPrincipal pP;
+
+        public LugaresDispo(Usuario user)
         {
             InitializeComponent();
+            this.user = user;
+        }
+
+        private void LugaresDispo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureback_Click(object sender, EventArgs e)
+        {
+            pP = new PagPrincipal(user);
+            pP.Show();
+            this.Hide();
         }
     }
 }

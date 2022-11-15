@@ -19,6 +19,11 @@ namespace Parcheggio
         {
             InitializeComponent();
 
+
+            this.btnIniciarSesion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnIniciarSesion_Click);
+            this.btnRegistrarse.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnRegistrarse_Click);
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -38,6 +43,16 @@ namespace Parcheggio
             Registro Reg = new Registro();
             this.Hide();
             Reg.Show();
+        }
+
+        private void Primera_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,83 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.btnRegistrarse = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnRegistrarse = new System.Windows.Forms.PictureBox();
+            this.btnIniciarSesion = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRegistrarse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIniciarSesion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnIniciarSesion
-            // 
-            this.btnIniciarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(281, 174);
-            this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(198, 49);
-            this.btnIniciarSesion.TabIndex = 0;
-            this.btnIniciarSesion.Text = "Iniciar Sesión ";
-            this.btnIniciarSesion.UseVisualStyleBackColor = false;
-            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarse.BackgroundImage = global::Parcheggio.Properties.Resources.btnRegistrarse;
+            this.btnRegistrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegistrarse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrarse.Location = new System.Drawing.Point(281, 242);
+            this.btnRegistrarse.Location = new System.Drawing.Point(316, 272);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(198, 49);
-            this.btnRegistrarse.TabIndex = 1;
-            this.btnRegistrarse.Text = "Registrarse";
-            this.btnRegistrarse.UseVisualStyleBackColor = false;
-            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
+            this.btnRegistrarse.Size = new System.Drawing.Size(157, 44);
+            this.btnRegistrarse.TabIndex = 9;
+            this.btnRegistrarse.TabStop = false;
             // 
-            // label1
+            // btnIniciarSesion
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightGray;
-            this.label1.Font = new System.Drawing.Font("Adobe Gothic Std B", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 35);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Parqueadero Parcheggio";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.btnIniciarSesion.BackgroundImage = global::Parcheggio.Properties.Resources.btnInicioSesion;
+            this.btnIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(316, 200);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(157, 48);
+            this.btnIniciarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnIniciarSesion.TabIndex = 8;
+            this.btnIniciarSesion.TabStop = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click_1);
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(360, 341);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
-            this.label2.TabIndex = 3;
+            this.pictureBox1.BackgroundImage = global::Parcheggio.Properties.Resources.parPar;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(171, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(447, 67);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Primera
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Parcheggio.Properties.Resources.descarga;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(781, 428);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(806, 491);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(822, 530);
+            this.MinimumSize = new System.Drawing.Size(822, 530);
             this.Name = "Primera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Primera_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnRegistrarse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnIniciarSesion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.Button btnRegistrarse;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox btnRegistrarse;
+        private System.Windows.Forms.PictureBox btnIniciarSesion;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
