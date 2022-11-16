@@ -50,5 +50,10 @@ namespace Parcheggio
         {
 
         }
+
+        private void btnRegistrarse_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
