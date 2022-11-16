@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcolor = new System.Windows.Forms.TextBox();
+            this.txtplaca = new System.Windows.Forms.TextBox();
             this.cbPuestoVehi = new System.Windows.Forms.ComboBox();
             this.cbTipoVehi = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -50,10 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(240, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(205, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Placa";
             // 
@@ -62,10 +61,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(538, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Color";
             // 
@@ -74,10 +72,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(240, 217);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(205, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tipo";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -87,10 +84,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(490, 217);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(538, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.Size = new System.Drawing.Size(111, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Asignar puesto";
             // 
@@ -98,38 +94,39 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(279, 28);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(225, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(289, 37);
+            this.label5.Size = new System.Drawing.Size(357, 46);
             this.label5.TabIndex = 4;
             this.label5.Text = "Registrar vehiculo";
             // 
-            // textBox1
+            // txtcolor
             // 
-            this.textBox1.Location = new System.Drawing.Point(492, 131);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(82, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtcolor.Location = new System.Drawing.Point(541, 151);
+            this.txtcolor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcolor.Name = "txtcolor";
+            this.txtcolor.Size = new System.Drawing.Size(108, 22);
+            this.txtcolor.TabIndex = 6;
+            this.txtcolor.TextChanged += new System.EventHandler(this.txtcolor_TextChanged);
             // 
-            // textBox2
+            // txtplaca
             // 
-            this.textBox2.Location = new System.Drawing.Point(242, 131);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(82, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtplaca.Location = new System.Drawing.Point(208, 151);
+            this.txtplaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtplaca.Name = "txtplaca";
+            this.txtplaca.Size = new System.Drawing.Size(108, 22);
+            this.txtplaca.TabIndex = 7;
+            this.txtplaca.TextChanged += new System.EventHandler(this.txtplaca_TextChanged);
             // 
             // cbPuestoVehi
             // 
             this.cbPuestoVehi.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.cbPuestoVehi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbPuestoVehi.FormattingEnabled = true;
-            this.cbPuestoVehi.Location = new System.Drawing.Point(492, 242);
-            this.cbPuestoVehi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPuestoVehi.Location = new System.Drawing.Point(541, 288);
+            this.cbPuestoVehi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPuestoVehi.Name = "cbPuestoVehi";
-            this.cbPuestoVehi.Size = new System.Drawing.Size(90, 21);
+            this.cbPuestoVehi.Size = new System.Drawing.Size(119, 24);
             this.cbPuestoVehi.TabIndex = 8;
             // 
             // cbTipoVehi
@@ -140,10 +137,10 @@
             this.cbTipoVehi.Items.AddRange(new object[] {
             "Automovil\t",
             "Motocicleta"});
-            this.cbTipoVehi.Location = new System.Drawing.Point(242, 242);
-            this.cbTipoVehi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTipoVehi.Location = new System.Drawing.Point(208, 288);
+            this.cbTipoVehi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTipoVehi.Name = "cbTipoVehi";
-            this.cbTipoVehi.Size = new System.Drawing.Size(90, 21);
+            this.cbTipoVehi.Size = new System.Drawing.Size(119, 24);
             this.cbTipoVehi.TabIndex = 9;
             this.cbTipoVehi.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -153,18 +150,20 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(173, 68);
+            this.pictureBox2.Location = new System.Drawing.Point(110, 83);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(469, 366);
+            this.pictureBox2.Size = new System.Drawing.Size(586, 366);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
             // btnRogVeih
             // 
-            this.btnRogVeih.Location = new System.Drawing.Point(355, 306);
+            this.btnRogVeih.Location = new System.Drawing.Point(358, 367);
+            this.btnRogVeih.Margin = new System.Windows.Forms.Padding(4);
             this.btnRogVeih.Name = "btnRogVeih";
-            this.btnRogVeih.Size = new System.Drawing.Size(110, 28);
+            this.btnRogVeih.Size = new System.Drawing.Size(147, 34);
             this.btnRogVeih.TabIndex = 20;
             this.btnRogVeih.Text = "Registrar vehiculo";
             this.btnRogVeih.UseVisualStyleBackColor = true;
@@ -174,35 +173,38 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // RegisVehiculo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(806, 489);
+            this.ClientSize = new System.Drawing.Size(804, 483);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRogVeih);
             this.Controls.Add(this.cbTipoVehi);
             this.Controls.Add(this.cbPuestoVehi);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtplaca);
+            this.Controls.Add(this.txtcolor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(822, 528);
-            this.MinimumSize = new System.Drawing.Size(822, 528);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(822, 530);
+            this.MinimumSize = new System.Drawing.Size(822, 530);
             this.Name = "RegisVehiculo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.RegisVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -217,8 +219,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcolor;
+        private System.Windows.Forms.TextBox txtplaca;
         private System.Windows.Forms.ComboBox cbPuestoVehi;
         private System.Windows.Forms.ComboBox cbTipoVehi;
         private System.Windows.Forms.PictureBox pictureBox2;

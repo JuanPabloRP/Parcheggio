@@ -54,6 +54,7 @@
             this.Controls.Add(this.pictureback);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LugaresDispo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LugaresDispo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             this.ResumeLayout(false);
