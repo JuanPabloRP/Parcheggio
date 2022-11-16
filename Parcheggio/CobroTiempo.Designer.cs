@@ -45,7 +45,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 37);
             this.pictureBox1.TabIndex = 14;
@@ -69,8 +69,8 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(328, 140);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(329, 154);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(413, 283);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +79,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(413, 190);
+            this.label2.Location = new System.Drawing.Point(413, 214);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 22);
@@ -88,8 +88,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(417, 215);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(416, 253);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(199, 22);
             this.textBox1.TabIndex = 0;
@@ -101,7 +101,7 @@
             this.txtCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCobrar.ForeColor = System.Drawing.Color.Black;
             this.txtCobrar.Location = new System.Drawing.Point(476, 345);
-            this.txtCobrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCobrar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCobrar.Name = "txtCobrar";
             this.txtCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtCobrar.Size = new System.Drawing.Size(125, 34);
@@ -114,14 +114,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1072, 594);
             this.Controls.Add(this.txtCobrar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CobroTiempo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CobroTiempo";
