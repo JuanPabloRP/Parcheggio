@@ -26,9 +26,7 @@ namespace Parcheggio
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -51,6 +49,11 @@ namespace Parcheggio
         }
 
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

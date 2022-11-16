@@ -47,6 +47,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
             this.linkLabel1.Location = new System.Drawing.Point(364, 412);
             this.linkLabel1.MaximumSize = new System.Drawing.Size(80, 0);
             this.linkLabel1.MinimumSize = new System.Drawing.Size(80, 0);
@@ -56,6 +57,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cerrar sesión";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // label3
@@ -145,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(806, 491);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);

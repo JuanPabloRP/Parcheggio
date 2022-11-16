@@ -50,9 +50,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(806, 491);
             this.Controls.Add(this.pictureback);
+            this.MaximumSize = new System.Drawing.Size(822, 530);
+            this.MinimumSize = new System.Drawing.Size(822, 530);
             this.Name = "LugaresDispo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LugaresDispo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             this.ResumeLayout(false);
