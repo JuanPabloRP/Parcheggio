@@ -38,20 +38,21 @@
             this.pictureback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureback.BackgroundImage")));
             this.pictureback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureback.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureback.Location = new System.Drawing.Point(13, 13);
-            this.pictureback.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureback.Location = new System.Drawing.Point(17, 16);
+            this.pictureback.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureback.Name = "pictureback";
-            this.pictureback.Size = new System.Drawing.Size(34, 27);
+            this.pictureback.Size = new System.Drawing.Size(45, 33);
             this.pictureback.TabIndex = 23;
             this.pictureback.TabStop = false;
             this.pictureback.Click += new System.EventHandler(this.pictureback_Click);
             // 
             // LugaresDispo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.pictureback);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LugaresDispo";
             this.Text = "LugaresDispo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
