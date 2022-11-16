@@ -38,5 +38,20 @@ namespace Parcheggio
             this.Hide();
             Pp.Show();
         }
+
+        private void RegisVehiculo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtplaca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcolor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
