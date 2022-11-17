@@ -16,6 +16,8 @@ namespace Parcheggio
 
         PagPrincipal pP;
 
+        
+
         public LugaresDispo(Usuario user)
         {
             InitializeComponent();
@@ -75,6 +77,13 @@ namespace Parcheggio
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+            EliminarPuesto eliminarPuesto = new EliminarPuesto(user);
+            this.Hide();
+            eliminarPuesto.Show();
+        }
+
+        private void cbTipoVehi_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

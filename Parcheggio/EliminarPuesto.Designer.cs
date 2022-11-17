@@ -34,8 +34,10 @@
             this.txtCrearPuesto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureback = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -86,11 +88,25 @@
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureback
+            // 
+            this.pictureback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureback.BackgroundImage")));
+            this.pictureback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureback.Location = new System.Drawing.Point(12, 12);
+            this.pictureback.Name = "pictureback";
+            this.pictureback.Size = new System.Drawing.Size(32, 28);
+            this.pictureback.TabIndex = 33;
+            this.pictureback.TabStop = false;
+            this.pictureback.Click += new System.EventHandler(this.pictureback_Click);
+            // 
             // EliminarPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureback);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCrearPuesto);
             this.Controls.Add(this.txtCrearPuesto);
@@ -100,6 +116,7 @@
             this.Text = "EliminarPuesto";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +129,6 @@
         private System.Windows.Forms.TextBox txtCrearPuesto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureback;
     }
 }
