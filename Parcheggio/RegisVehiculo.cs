@@ -127,5 +127,15 @@ namespace Parcheggio
                 MessageBox.Show("Los campos estan vacios :(");
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbPuestoVehi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

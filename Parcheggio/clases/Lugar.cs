@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcheggio.clases
+namespace Parcheggio
 {
     public class Lugar
     {
+        public static List<Lugar> lugares = new List<Lugar>();
         public int id { get; set; }
         public string puesto { get; set; }
         public bool disponible { get; set; }
@@ -19,6 +20,6 @@ namespace Parcheggio.clases
             puesto = null;
             disponible = true;
         }
-
+        
     }
 }

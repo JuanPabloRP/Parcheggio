@@ -26,6 +26,8 @@ namespace Parcheggio
 
         }
 
+        
+
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             inicioDeSesion PI = new inicioDeSesion();
@@ -47,6 +49,11 @@ namespace Parcheggio
         }
 
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
