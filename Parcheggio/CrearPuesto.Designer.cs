@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCrearPuesto = new System.Windows.Forms.TextBox();
+            this.txtPuesto = new System.Windows.Forms.TextBox();
             this.btnCrearPuesto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(292, 39);
+            this.label1.Location = new System.Drawing.Point(303, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 31);
             this.label1.TabIndex = 0;
@@ -69,16 +69,16 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Ingrese el puesto";
             // 
-            // txtCrearPuesto
+            // txtPuesto
             // 
-            this.txtCrearPuesto.Location = new System.Drawing.Point(281, 137);
-            this.txtCrearPuesto.Name = "txtCrearPuesto";
-            this.txtCrearPuesto.Size = new System.Drawing.Size(144, 20);
-            this.txtCrearPuesto.TabIndex = 20;
+            this.txtPuesto.Location = new System.Drawing.Point(281, 137);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(144, 20);
+            this.txtPuesto.TabIndex = 20;
             // 
             // btnCrearPuesto
             // 
-            this.btnCrearPuesto.Location = new System.Drawing.Point(362, 278);
+            this.btnCrearPuesto.Location = new System.Drawing.Point(363, 268);
             this.btnCrearPuesto.Name = "btnCrearPuesto";
             this.btnCrearPuesto.Size = new System.Drawing.Size(75, 23);
             this.btnCrearPuesto.TabIndex = 21;
@@ -92,7 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCrearPuesto);
-            this.Controls.Add(this.txtCrearPuesto);
+            this.Controls.Add(this.txtPuesto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
@@ -109,7 +109,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCrearPuesto;
+        private System.Windows.Forms.TextBox txtPuesto;
         private System.Windows.Forms.Button btnCrearPuesto;
     }
 }

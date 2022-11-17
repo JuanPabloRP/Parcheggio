@@ -118,6 +118,9 @@
     <EmbeddedResource Include="CrearPuesto.resx">
       <DependentUpon>CrearPuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPuesto.resx">
+      <DependentUpon>EliminarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LugaresDispo.resx">
       <DependentUpon>LugaresDispo.cs</DependentUpon>
     </EmbeddedResource>

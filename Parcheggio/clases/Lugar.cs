@@ -14,11 +14,11 @@ namespace Parcheggio
         public bool disponible { get; set; }
 
 
-        public Lugar(int _id)
+        public Lugar(int _id, string _puesto, bool _disponible)
         {
             id = _id;
-            puesto = null;
-            disponible = true;
+            puesto = _puesto;
+            disponible = _disponible;
         }
         
     }
