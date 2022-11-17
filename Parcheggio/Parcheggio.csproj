@@ -149,6 +149,7 @@
     <None Include="Resources\parPar.PNG" />
     <None Include="Resources\btnInicioSesion.PNG" />
     <None Include="Resources\btnRegistrarse.PNG" />
+    <Content Include="utils\clientesParcheggio.txt" />
     <Content Include="utils\usuariosParcheggio.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
