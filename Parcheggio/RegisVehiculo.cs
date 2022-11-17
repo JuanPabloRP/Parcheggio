@@ -58,5 +58,10 @@ namespace Parcheggio
         {
 
         }
+
+        private void cbPuestoVehi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

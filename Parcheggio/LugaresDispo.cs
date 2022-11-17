@@ -87,5 +87,12 @@ namespace Parcheggio
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EditarPuesto editarPuesto = new EditarPuesto(user);
+            this.Hide();
+            editarPuesto.Show();
+        }
     }
 }

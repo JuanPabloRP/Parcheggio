@@ -108,7 +108,7 @@
             // txtcolor
             // 
             this.txtcolor.Location = new System.Drawing.Point(406, 123);
-            this.txtcolor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcolor.Margin = new System.Windows.Forms.Padding(2);
             this.txtcolor.Name = "txtcolor";
             this.txtcolor.Size = new System.Drawing.Size(82, 20);
             this.txtcolor.TabIndex = 6;
@@ -117,7 +117,7 @@
             // txtplaca
             // 
             this.txtplaca.Location = new System.Drawing.Point(156, 123);
-            this.txtplaca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtplaca.Margin = new System.Windows.Forms.Padding(2);
             this.txtplaca.Name = "txtplaca";
             this.txtplaca.Size = new System.Drawing.Size(82, 20);
             this.txtplaca.TabIndex = 7;
@@ -129,10 +129,11 @@
             this.cbPuestoVehi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbPuestoVehi.FormattingEnabled = true;
             this.cbPuestoVehi.Location = new System.Drawing.Point(406, 234);
-            this.cbPuestoVehi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPuestoVehi.Margin = new System.Windows.Forms.Padding(2);
             this.cbPuestoVehi.Name = "cbPuestoVehi";
             this.cbPuestoVehi.Size = new System.Drawing.Size(90, 21);
             this.cbPuestoVehi.TabIndex = 8;
+            this.cbPuestoVehi.SelectedIndexChanged += new System.EventHandler(this.cbPuestoVehi_SelectedIndexChanged);
             // 
             // cbTipoVehi
             // 
@@ -143,7 +144,7 @@
             "Automovil\t",
             "Motocicleta"});
             this.cbTipoVehi.Location = new System.Drawing.Point(156, 234);
-            this.cbTipoVehi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTipoVehi.Margin = new System.Windows.Forms.Padding(2);
             this.cbTipoVehi.Name = "cbTipoVehi";
             this.cbTipoVehi.Size = new System.Drawing.Size(90, 21);
             this.cbTipoVehi.TabIndex = 9;
@@ -202,7 +203,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(620, 438);
             this.MinimumSize = new System.Drawing.Size(620, 438);
             this.Name = "RegisVehiculo";
