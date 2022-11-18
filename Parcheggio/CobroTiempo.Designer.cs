@@ -33,8 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtCobrar = new System.Windows.Forms.Button();
+            this.btnCobrar = new System.Windows.Forms.Button();
+            this.cbVehiculos = new System.Windows.Forms.ComboBox();
+            this.btnVerTodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -76,35 +77,49 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(226, 144);
+            this.label2.Location = new System.Drawing.Point(229, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ingrese placa";
             // 
-            // textBox1
+            // btnCobrar
             // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(228, 176);
-            this.textBox1.MaxLength = 6;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btnCobrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCobrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCobrar.Location = new System.Drawing.Point(266, 262);
+            this.btnCobrar.Name = "btnCobrar";
+            this.btnCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCobrar.Size = new System.Drawing.Size(94, 28);
+            this.btnCobrar.TabIndex = 20;
+            this.btnCobrar.Text = "Cobrar";
+            this.btnCobrar.UseVisualStyleBackColor = true;
+            this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
-            // txtCobrar
+            // cbVehiculos
             // 
-            this.txtCobrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.txtCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCobrar.ForeColor = System.Drawing.Color.Black;
-            this.txtCobrar.Location = new System.Drawing.Point(273, 250);
-            this.txtCobrar.Name = "txtCobrar";
-            this.txtCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtCobrar.Size = new System.Drawing.Size(94, 28);
-            this.txtCobrar.TabIndex = 19;
-            this.txtCobrar.Text = "Cobrar";
-            this.txtCobrar.UseVisualStyleBackColor = true;
+            this.cbVehiculos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVehiculos.FormattingEnabled = true;
+            this.cbVehiculos.Location = new System.Drawing.Point(232, 165);
+            this.cbVehiculos.Name = "cbVehiculos";
+            this.cbVehiculos.Size = new System.Drawing.Size(171, 21);
+            this.cbVehiculos.TabIndex = 22;
+            // 
+            // btnVerTodos
+            // 
+            this.btnVerTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVerTodos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerTodos.ForeColor = System.Drawing.Color.Black;
+            this.btnVerTodos.Location = new System.Drawing.Point(266, 343);
+            this.btnVerTodos.Name = "btnVerTodos";
+            this.btnVerTodos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnVerTodos.Size = new System.Drawing.Size(94, 28);
+            this.btnVerTodos.TabIndex = 23;
+            this.btnVerTodos.Text = "Ver info";
+            this.btnVerTodos.UseVisualStyleBackColor = true;
             // 
             // CobroTiempo
             // 
@@ -112,8 +127,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(604, 399);
-            this.Controls.Add(this.txtCobrar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnVerTodos);
+            this.Controls.Add(this.cbVehiculos);
+            this.Controls.Add(this.btnCobrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -137,7 +153,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button txtCobrar;
+        private System.Windows.Forms.Button btnCobrar;
+        private System.Windows.Forms.ComboBox cbVehiculos;
+        private System.Windows.Forms.Button btnVerTodos;
     }
 }
