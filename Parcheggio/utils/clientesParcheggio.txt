@@ -1,11 +1,1 @@
-4885650|||
-4192684|||TGS 33G
-1914569||SRT 44R|amarillo
-2228855||THS 33F|verde
-2568179||dadadad|azul
-4747599||sdsd|sdsddsdsdsd
-6768577||dadadad|dfdvdvd
-3204470|Motocicleta|fsfs|fsfsf
-4230663|Automovil|aaaa|siuuuu
-7667344|Motocicleta|KTF33G|Azul
-5205359|Motocicleta|ASASA|asasasasas
+1371090|Automovil|A1|QWE123|white|18/11/2022 08:53:27 a.m.
