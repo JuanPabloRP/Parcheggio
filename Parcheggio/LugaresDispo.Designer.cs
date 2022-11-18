@@ -78,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(287, 179);
+            this.label2.Location = new System.Drawing.Point(346, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 30;
@@ -172,9 +172,9 @@
             // cbPuestoDisponibles
             // 
             this.cbPuestoDisponibles.FormattingEnabled = true;
-            this.cbPuestoDisponibles.Location = new System.Drawing.Point(290, 211);
+            this.cbPuestoDisponibles.Location = new System.Drawing.Point(349, 204);
             this.cbPuestoDisponibles.Name = "cbPuestoDisponibles";
-            this.cbPuestoDisponibles.Size = new System.Drawing.Size(206, 21);
+            this.cbPuestoDisponibles.Size = new System.Drawing.Size(100, 21);
             this.cbPuestoDisponibles.TabIndex = 35;
             // 
             // LugaresDispo
