@@ -1,5 +1,4 @@
-﻿using Parcheggio.clases;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,25 +47,37 @@ namespace Parcheggio
         //Clientes
         public void Archivo()
         {
-            StreamReader pla = new StreamReader("..\\..\\utils\\clientesParcheggio.txt");
+            StreamReader sr = new StreamReader("..\\..\\utils\\clientesParcheggio.txt");
             string linea;
-            linea = pla.ReadLine();
-
+            linea = sr.ReadLine();
+            bool clienteRepetido = false;
             while (linea != null)
             {
                 string[] vec = linea.Split('|');
                 try
                 {
-                    clientes.Add(new Cliente(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4],Convert.ToDateTime(vec[5]) ));
+                    foreach (Cliente c in clientes)
+                    {
+                        if (c.placa == vec[3])
+                        {
+                            clienteRepetido = true;
+                        }
+                    }
+
+                    if (clienteRepetido == false)
+                    {
+                        clientes.Add(new Cliente(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4], Convert.ToDateTime(vec[5])));
+                    }
+
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Error: " + e);
                 }
 
-                linea = pla.ReadLine();
+                linea = sr.ReadLine();
             }
-            pla.Close();
+            sr.Close();
         }
 
         public void llenando()
@@ -81,6 +92,7 @@ namespace Parcheggio
             PL.Close();
 
         }
+
 
 
         //Lugares
@@ -147,7 +159,6 @@ namespace Parcheggio
 
         public void llenarCombobox()
         {
-            
             foreach (Lugar l in lugares)
             {
                 try
@@ -159,11 +170,9 @@ namespace Parcheggio
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("e:" + ex);
+                    Console.WriteLine("e:" + ex);
                 }
-                }
-            
-            
+            }
         }
 
 
@@ -214,8 +223,13 @@ namespace Parcheggio
                     {
                         fechaEntrada = DateTime.Now;
                         clientes.Add(new Cliente(id, Cbtipo.Text, cbPuestoVehi.Text, txtplaca.Text, txtcolor.Text, fechaEntrada));
-
+                        //llena archivo de clientes
                         llenando();
+                        //llena archivo de lugares 
+                        llenarArc();
+
+
+                        Archivo();
                         llenarArc();
 
                         cbPuestoVehi.Items.Remove(cbPuestoVehi.Text);
