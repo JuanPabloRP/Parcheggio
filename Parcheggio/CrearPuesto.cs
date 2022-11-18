@@ -16,7 +16,11 @@ namespace Parcheggio
     {
         List<Lugar> lugares = Lugar.lugares;
 
-        public CrearPuesto()
+        LugaresDispo lD;
+        Usuario user;
+
+
+        public CrearPuesto(Usuario _user)
         {
             InitializeComponent();
             leerArc();
@@ -129,7 +133,11 @@ namespace Parcheggio
 
         }
 
-
-
+        private void pictureback_Click(object sender, EventArgs e)
+        {
+            lD = new LugaresDispo(user);
+            lD.Show();
+            this.Hide();
+        }
     }
 }

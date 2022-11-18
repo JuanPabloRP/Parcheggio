@@ -20,6 +20,9 @@ namespace Parcheggio
             this.user = user;
         }
 
+
+
+
         private void CobroTiempo_Load(object sender, EventArgs e)
         {
 
@@ -31,6 +34,11 @@ namespace Parcheggio
             Pp = new PagPrincipal(user);
             this.Hide();
             Pp.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -118,6 +118,9 @@
     <EmbeddedResource Include="CrearPuesto.resx">
       <DependentUpon>CrearPuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarPuesto.resx">
+      <DependentUpon>EditarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EliminarPuesto.resx">
       <DependentUpon>EliminarPuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,7 +176,10 @@
     <None Include="Resources\parPar.PNG" />
     <None Include="Resources\btnInicioSesion.PNG" />
     <None Include="Resources\btnRegistrarse.PNG" />
+    <None Include="Resources\disponibles.PNG" />
+    <None Include="Resources\Editar.PNG" />
     <Content Include="utils\lugaresParcheggio.txt" />
+    <Content Include="utils\clientesParcheggio.txt" />
     <Content Include="utils\usuariosParcheggio.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,9 +12,29 @@ namespace Parcheggio
 {
     public partial class EditarPuesto : Form
     {
-        public EditarPuesto()
+        LugaresDispo Ld;
+        Usuario user;
+        public EditarPuesto(Usuario _user)
         {
             InitializeComponent();
+            user = _user;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtplaca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Ld = new LugaresDispo(user);
+            Ld.Show();
+            this.Hide(); ;
         }
     }
 }
