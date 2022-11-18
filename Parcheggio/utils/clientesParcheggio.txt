@@ -1,1 +1,2 @@
-1371090|Automovil|A1|QWE123|white|18/11/2022 08:53:27 a.m.
+1334296|Motocicleta|A4|TFG22R|negro|18/11/2022 12:39:18 p. m.
+5567359|Automovil|B5|ADDDDD|VERDE|18/11/2022 12:53:38 p. m.
