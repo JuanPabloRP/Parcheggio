@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbTipoVehi = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -41,6 +40,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.cbPuestoDisponibles = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureback)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,21 +85,6 @@
             this.label2.Text = "Puestos disponibles:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // cbTipoVehi
-            // 
-            this.cbTipoVehi.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.cbTipoVehi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbTipoVehi.FormattingEnabled = true;
-            this.cbTipoVehi.Items.AddRange(new object[] {
-            "Automovil\t",
-            "Motocicleta"});
-            this.cbTipoVehi.Location = new System.Drawing.Point(290, 204);
-            this.cbTipoVehi.Margin = new System.Windows.Forms.Padding(2);
-            this.cbTipoVehi.Name = "cbTipoVehi";
-            this.cbTipoVehi.Size = new System.Drawing.Size(204, 21);
-            this.cbTipoVehi.TabIndex = 31;
-            this.cbTipoVehi.SelectedIndexChanged += new System.EventHandler(this.cbTipoVehi_SelectedIndexChanged);
-            // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -124,6 +109,7 @@
             this.button2.TabIndex = 33;
             this.button2.Text = "Añadir puestos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox3
             // 
@@ -183,16 +169,24 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // cbPuestoDisponibles
+            // 
+            this.cbPuestoDisponibles.FormattingEnabled = true;
+            this.cbPuestoDisponibles.Location = new System.Drawing.Point(290, 211);
+            this.cbPuestoDisponibles.Name = "cbPuestoDisponibles";
+            this.cbPuestoDisponibles.Size = new System.Drawing.Size(206, 21);
+            this.cbPuestoDisponibles.TabIndex = 35;
+            // 
             // LugaresDispo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(806, 491);
+            this.Controls.Add(this.cbPuestoDisponibles);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.cbTipoVehi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureback);
@@ -221,9 +215,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbTipoVehi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox cbPuestoDisponibles;
     }
 }

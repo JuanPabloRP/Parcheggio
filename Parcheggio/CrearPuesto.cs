@@ -24,6 +24,8 @@ namespace Parcheggio
         {
             InitializeComponent();
             leerArc();
+
+            user = _user;
         }
 
 
@@ -31,7 +33,7 @@ namespace Parcheggio
 
         //metodos propios
 
-        //pa llenar el archivo plano con los datos del usuario
+        //pa llenar el archivo plano 
         public void llenarArc()
         {
 
@@ -45,18 +47,31 @@ namespace Parcheggio
 
         }
 
+        //pa leer los datos del archivo plano
         public void leerArc()
         {
             StreamReader sr = new StreamReader("..\\..\\utils\\lugaresParcheggio.txt");
             string linea;
             linea = sr.ReadLine();
-
+            bool puestoRepetido = false;
             while (linea != null)
             {
                 string[] vec = linea.Split('|');
                 try
                 {
-                    lugares.Add(new Lugar(Convert.ToInt32(vec[0]), vec[1], Convert.ToBoolean(vec[2])));
+                    foreach (Lugar l in lugares)
+                    {
+                        if (l.puesto == vec[1])
+                        {
+                            puestoRepetido = true;
+                        }
+                    }
+
+                    if (puestoRepetido == false)
+                    {
+                        lugares.Add(new Lugar(Convert.ToInt32(vec[0]), vec[1], Convert.ToInt32(vec[2])));
+                    }
+
                 }
                 catch (Exception e)
                 {
@@ -66,6 +81,8 @@ namespace Parcheggio
                 linea = sr.ReadLine();
             }
             sr.Close();
+
+
         }
 
 
@@ -118,7 +135,7 @@ namespace Parcheggio
 
                 if (lugarRepetido == false)
                 {
-                    lugares.Add(new Lugar(id, txtPuesto.Text.Trim(), true));
+                    lugares.Add(new Lugar(id, txtPuesto.Text.Trim(), 1));
                     llenarArc();
                     MessageBox.Show("Puesto añadido :)");
                     txtPuesto.Clear();

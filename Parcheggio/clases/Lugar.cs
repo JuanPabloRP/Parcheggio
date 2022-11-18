@@ -11,10 +11,11 @@ namespace Parcheggio
         public static List<Lugar> lugares = new List<Lugar>();
         public int id { get; set; }
         public string puesto { get; set; }
-        public bool disponible { get; set; }
+        //1-disponible 0-no disponible
+        public int disponible { get; set; }
 
 
-        public Lugar(int _id, string _puesto, bool _disponible)
+        public Lugar(int _id, string _puesto, int _disponible)
         {
             id = _id;
             puesto = _puesto;
