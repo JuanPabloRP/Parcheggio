@@ -185,7 +185,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1072, 594);
             this.Controls.Add(this.cbPuestoDisponibles);
@@ -196,6 +195,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureback);
             this.Controls.Add(this.pictureBox2);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximumSize = new System.Drawing.Size(1090, 641);

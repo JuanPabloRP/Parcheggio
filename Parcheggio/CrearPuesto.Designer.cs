@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(404, 48);
+            this.label1.Location = new System.Drawing.Point(412, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 39);
@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(367, 164);
+            this.label2.Location = new System.Drawing.Point(375, 228);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 16);
@@ -63,7 +63,7 @@
             // txtPuesto
             // 
             this.txtPuesto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPuesto.Location = new System.Drawing.Point(371, 183);
+            this.txtPuesto.Location = new System.Drawing.Point(379, 247);
             this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Size = new System.Drawing.Size(191, 22);
@@ -71,7 +71,7 @@
             // 
             // btnCrearPuesto
             // 
-            this.btnCrearPuesto.Location = new System.Drawing.Point(477, 298);
+            this.btnCrearPuesto.Location = new System.Drawing.Point(485, 362);
             this.btnCrearPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCrearPuesto.Name = "btnCrearPuesto";
             this.btnCrearPuesto.Size = new System.Drawing.Size(100, 28);
@@ -99,7 +99,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(339, 107);
+            this.pictureBox2.Location = new System.Drawing.Point(347, 171);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(365, 277);
@@ -112,16 +112,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1072, 594);
             this.Controls.Add(this.pictureback);
             this.Controls.Add(this.btnCrearPuesto);
             this.Controls.Add(this.txtPuesto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1090, 641);
+            this.MinimumSize = new System.Drawing.Size(1090, 641);
             this.Name = "CrearPuesto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearPuesto";
             ((System.ComponentModel.ISupportInitialize)(this.pictureback)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
