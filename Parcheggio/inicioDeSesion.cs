@@ -58,13 +58,24 @@ namespace Parcheggio
             StreamReader sr = new StreamReader("..\\..\\utils\\usuariosParcheggio.txt");
             string linea;
             linea = sr.ReadLine();
-
+            bool usuarioRepetido = false;
             while (linea != null)
             {
                 string[] vec = linea.Split('|');
                 try
                 {
-                    usuarios.Add(new Usuario(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4]));
+                    foreach (Usuario u in usuarios)
+                    {
+                        if (u.username == vec[1])
+                        {
+                            usuarioRepetido = true;
+                        }
+                    }
+
+                    if (usuarioRepetido == false)
+                    {
+                        usuarios.Add(new Usuario(Convert.ToInt32(vec[0]), vec[1], vec[2], vec[3], vec[4]));
+                    }
                 }
                 catch (Exception e)
                 {
