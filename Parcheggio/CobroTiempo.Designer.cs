@@ -45,9 +45,10 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -56,9 +57,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 39);
+            this.label1.Location = new System.Drawing.Point(249, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 37);
+            this.label1.Size = new System.Drawing.Size(331, 46);
             this.label1.TabIndex = 15;
             this.label1.Text = "Cobro de tiempo";
             // 
@@ -68,18 +70,20 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(163, 95);
+            this.pictureBox2.Location = new System.Drawing.Point(217, 117);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(310, 230);
+            this.pictureBox2.Size = new System.Drawing.Size(413, 283);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(229, 144);
+            this.label2.Location = new System.Drawing.Point(305, 177);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.Size = new System.Drawing.Size(105, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ingrese placa";
             // 
@@ -89,10 +93,11 @@
             this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCobrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCobrar.Location = new System.Drawing.Point(266, 262);
+            this.btnCobrar.Location = new System.Drawing.Point(355, 322);
+            this.btnCobrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCobrar.Name = "btnCobrar";
             this.btnCobrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCobrar.Size = new System.Drawing.Size(94, 28);
+            this.btnCobrar.Size = new System.Drawing.Size(125, 34);
             this.btnCobrar.TabIndex = 20;
             this.btnCobrar.Text = "Cobrar";
             this.btnCobrar.UseVisualStyleBackColor = true;
@@ -102,9 +107,10 @@
             // 
             this.cbVehiculos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVehiculos.FormattingEnabled = true;
-            this.cbVehiculos.Location = new System.Drawing.Point(232, 165);
+            this.cbVehiculos.Location = new System.Drawing.Point(309, 203);
+            this.cbVehiculos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbVehiculos.Name = "cbVehiculos";
-            this.cbVehiculos.Size = new System.Drawing.Size(171, 21);
+            this.cbVehiculos.Size = new System.Drawing.Size(227, 24);
             this.cbVehiculos.TabIndex = 22;
             // 
             // btnVerTodos
@@ -113,20 +119,21 @@
             this.btnVerTodos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVerTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerTodos.ForeColor = System.Drawing.Color.Black;
-            this.btnVerTodos.Location = new System.Drawing.Point(266, 343);
+            this.btnVerTodos.Location = new System.Drawing.Point(355, 422);
+            this.btnVerTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerTodos.Name = "btnVerTodos";
             this.btnVerTodos.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnVerTodos.Size = new System.Drawing.Size(94, 28);
+            this.btnVerTodos.Size = new System.Drawing.Size(125, 34);
             this.btnVerTodos.TabIndex = 23;
             this.btnVerTodos.Text = "Ver info";
             this.btnVerTodos.UseVisualStyleBackColor = true;
             // 
             // CobroTiempo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(604, 399);
+            this.ClientSize = new System.Drawing.Size(803, 481);
             this.Controls.Add(this.btnVerTodos);
             this.Controls.Add(this.cbVehiculos);
             this.Controls.Add(this.btnCobrar);
@@ -134,8 +141,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.MaximumSize = new System.Drawing.Size(620, 438);
-            this.MinimumSize = new System.Drawing.Size(620, 438);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(821, 528);
+            this.MinimumSize = new System.Drawing.Size(821, 528);
             this.Name = "CobroTiempo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CobroTiempo";

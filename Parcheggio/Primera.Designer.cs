@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Primera));
             this.btnRegistrarse = new System.Windows.Forms.PictureBox();
             this.btnIniciarSesion = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,9 +42,10 @@
             this.btnRegistrarse.BackgroundImage = global::Parcheggio.Properties.Resources.btnRegistrarse;
             this.btnRegistrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegistrarse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrarse.Location = new System.Drawing.Point(316, 272);
+            this.btnRegistrarse.Location = new System.Drawing.Point(421, 335);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(157, 44);
+            this.btnRegistrarse.Size = new System.Drawing.Size(209, 54);
             this.btnRegistrarse.TabIndex = 9;
             this.btnRegistrarse.TabStop = false;
             this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
@@ -53,9 +55,10 @@
             this.btnIniciarSesion.BackgroundImage = global::Parcheggio.Properties.Resources.btnInicioSesion;
             this.btnIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(316, 200);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(421, 246);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(157, 48);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(209, 59);
             this.btnIniciarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnIniciarSesion.TabIndex = 8;
             this.btnIniciarSesion.TabStop = false;
@@ -65,26 +68,28 @@
             // 
             this.pictureBox1.BackgroundImage = global::Parcheggio.Properties.Resources.parPar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(171, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(228, 112);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(447, 67);
+            this.pictureBox1.Size = new System.Drawing.Size(596, 82);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Primera
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(806, 491);
+            this.ClientSize = new System.Drawing.Size(1072, 594);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(822, 530);
-            this.MinimumSize = new System.Drawing.Size(822, 530);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1090, 641);
+            this.MinimumSize = new System.Drawing.Size(1090, 641);
             this.Name = "Primera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
