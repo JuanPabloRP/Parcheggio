@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Parcheggio
 {
@@ -15,47 +16,62 @@ namespace Parcheggio
     {
         List<Lugar> lugares = Lugar.lugares;
 
-        public CrearPuesto()
+        LugaresDispo lD;
+        Usuario user;
+
+
+        public CrearPuesto(Usuario _user)
         {
             InitializeComponent();
+            leerArc();
+
+            user = _user;
         }
 
 
-
-        private void btnCrearPuesto_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         //metodos propios
 
-        //pa llenar el archivo plano con los datos del usuario
+        //pa llenar el archivo plano 
         public void llenarArc()
         {
 
-            StreamWriter sw = new StreamWriter("..\\..\\utils\\usuariosParcheggio.txt");
+            StreamWriter sw = new StreamWriter("..\\..\\utils\\lugaresParcheggio.txt");
 
             foreach (Lugar l in lugares)
             {
-                sw.WriteLine($"{l.id}");
+                sw.WriteLine($"{l.id}|{l.puesto}|{l.disponible}");
             }
             sw.Close();
 
         }
 
+        //pa leer los datos del archivo plano
         public void leerArc()
         {
-            StreamReader sr = new StreamReader("..\\..\\utils\\usuariosParcheggio.txt");
+            StreamReader sr = new StreamReader("..\\..\\utils\\lugaresParcheggio.txt");
             string linea;
             linea = sr.ReadLine();
-
+            bool puestoRepetido = false;
             while (linea != null)
             {
                 string[] vec = linea.Split('|');
                 try
                 {
-                    lugares.Add(new Lugar(Convert.ToInt32(vec[0])));
+                    foreach (Lugar l in lugares)
+                    {
+                        if (l.puesto == vec[1])
+                        {
+                            puestoRepetido = true;
+                        }
+                    }
+
+                    if (puestoRepetido == false)
+                    {
+                        lugares.Add(new Lugar(Convert.ToInt32(vec[0]), vec[1], Convert.ToInt32(vec[2])));
+                    }
+
                 }
                 catch (Exception e)
                 {
@@ -65,16 +81,80 @@ namespace Parcheggio
                 linea = sr.ReadLine();
             }
             sr.Close();
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+
+
+
+        private void btnCrearPuesto_Click(object sender, EventArgs e)
         {
 
+            Random n = new Random();
+            int id = 0;
+            bool idRepetido = false;
+            bool lugarRepetido = false;
+
+            if (txtPuesto.Text.Trim() != "")
+            {
+                do
+                {
+                    id = n.Next(1000000, 9999999);
+
+                    if (lugares.Count > 0)
+                    {
+                        foreach (Lugar l in lugares)
+                        {
+
+                            if (id == l.id)
+                            {
+                                idRepetido = true;
+                                break;
+                            }
+
+
+                        }
+                    }
+
+                } while (idRepetido == true);
+
+
+                foreach (Lugar l in lugares)
+                {
+                    if (txtPuesto.Text.Equals(l.puesto))
+                    {
+                        lugarRepetido = true;
+                        MessageBox.Show("Por favor ingrese otro puesto, el ingresado ya existe");
+                        txtPuesto.Clear();
+                        break;
+                    }
+                }
+
+
+
+                if (lugarRepetido == false)
+                {
+                    lugares.Add(new Lugar(id, txtPuesto.Text.Trim(), 1));
+                    llenarArc();
+                    MessageBox.Show("Puesto añadido :)");
+                    txtPuesto.Clear();
+                    
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Los campos estan vacios :(");
+            }
+
+        }
+
+        private void pictureback_Click(object sender, EventArgs e)
+        {
+            lD = new LugaresDispo(user);
+            lD.Show();
+            this.Hide();
         }
     }
 }

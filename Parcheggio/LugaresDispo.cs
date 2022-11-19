@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,12 +23,11 @@ namespace Parcheggio
         {
             InitializeComponent();
             this.user = user;
+
+            verPuestos();
         }
 
-        private void LugaresDispo_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pictureback_Click(object sender, EventArgs e)
         {
@@ -36,34 +36,63 @@ namespace Parcheggio
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+        //pa ver los puestos xd - si quiere usa este metodo o hace uno propio
+        
+        public void verPuestos()
+        {
+            foreach (string l in File.ReadLines("..\\..\\utils\\lugaresParcheggio.txt"))
+            {
+                string[] vec = l.Split('|');
+
+                try
+                {
+                    if (Convert.ToInt32(vec[2]) == 1)
+                    {
+                        cbPuestoDisponibles.Items.Add(vec[1]);
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("e:" + ex);
+                }
+            }
+        }
+        
+
+        //ir eliminar
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            EliminarPuesto eliminarPuesto = new EliminarPuesto(user);
+            this.Hide();
+            eliminarPuesto.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        
+        //ir editar
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            EditarPuesto editarPuesto = new EditarPuesto(user);
+            this.Hide();
+            editarPuesto.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //ir añadir
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            CrearPuesto cP = new CrearPuesto(user);
+            this.Hide();
+            cP.Show();
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
 
-        }
 
-        private void pictureBox1_Click_2(object sender, EventArgs e)
-        {
-
-        }
+        //chimbadas innecesarias o que no vamos a usar
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("3");
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -74,25 +103,6 @@ namespace Parcheggio
         private void label2_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            EliminarPuesto eliminarPuesto = new EliminarPuesto(user);
-            this.Hide();
-            eliminarPuesto.Show();
-        }
-
-        private void cbTipoVehi_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            EditarPuesto editarPuesto = new EditarPuesto(user);
-            this.Hide();
-            editarPuesto.Show();
         }
     }
 }

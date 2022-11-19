@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarPuesto));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCrearPuesto = new System.Windows.Forms.Button();
-            this.txtCrearPuesto = new System.Windows.Forms.TextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txteliminar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureback = new System.Windows.Forms.PictureBox();
@@ -50,21 +50,24 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCrearPuesto
+            // btnEliminar
             // 
-            this.btnCrearPuesto.Location = new System.Drawing.Point(360, 289);
-            this.btnCrearPuesto.Name = "btnCrearPuesto";
-            this.btnCrearPuesto.Size = new System.Drawing.Size(75, 23);
-            this.btnCrearPuesto.TabIndex = 31;
-            this.btnCrearPuesto.Text = "Eliminar";
-            this.btnCrearPuesto.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(360, 289);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 31;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtCrearPuesto
+            // txteliminar
             // 
-            this.txtCrearPuesto.Location = new System.Drawing.Point(277, 229);
-            this.txtCrearPuesto.Name = "txtCrearPuesto";
-            this.txtCrearPuesto.Size = new System.Drawing.Size(244, 20);
-            this.txtCrearPuesto.TabIndex = 30;
+            this.txteliminar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txteliminar.Location = new System.Drawing.Point(277, 229);
+            this.txteliminar.Name = "txteliminar";
+            this.txteliminar.Size = new System.Drawing.Size(244, 20);
+            this.txteliminar.TabIndex = 30;
+            this.txteliminar.TextChanged += new System.EventHandler(this.txteliminar_TextChanged);
             // 
             // label2
             // 
@@ -108,8 +111,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureback);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnCrearPuesto);
-            this.Controls.Add(this.txtCrearPuesto);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.txteliminar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Name = "EliminarPuesto";
@@ -125,8 +128,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCrearPuesto;
-        private System.Windows.Forms.TextBox txtCrearPuesto;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txteliminar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureback;
