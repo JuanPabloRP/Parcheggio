@@ -34,7 +34,7 @@ namespace Parcheggio
 
             //para centrar algunos componentes
             List<Control> components = new List<Control>();
-            components.Add(label1);
+            
             components.Add(btnRegistrarse);
             components.Add(label6);
             components.Add(linkLabel1);

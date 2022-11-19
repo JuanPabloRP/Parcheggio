@@ -178,6 +178,11 @@
     <None Include="Resources\btnRegistrarse.PNG" />
     <None Include="Resources\disponibles.PNG" />
     <None Include="Resources\Editar.PNG" />
+    <None Include="Resources\cobroTiempo.PNG" />
+    <None Include="Resources\crearPuesto.PNG" />
+    <None Include="Resources\inicioSesion.PNG" />
+    <None Include="Resources\registro.PNG" />
+    <None Include="Resources\registroVehiculo.PNG" />
     <Content Include="utils\lugaresParcheggio.txt" />
     <Content Include="utils\clientesParcheggio.txt" />
     <Content Include="utils\usuariosParcheggio.txt" />

@@ -123,5 +123,10 @@ namespace Parcheggio
         {
 
         }
+
+        private void inicioDeSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
