@@ -59,7 +59,7 @@ namespace Parcheggio
             
             if (eliminado == false)
             {
-                MessageBox.Show("El puesto no se pudo eliminar (posiblemente no existe)");
+                MessageBox.Show("El puesto no se pudo eliminar (posiblemente no existe o está en uso)");
             }
 
 
