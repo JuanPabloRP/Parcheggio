@@ -42,11 +42,12 @@ namespace Parcheggio
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            bool eliminado = false;
             foreach (Lugar place in lugares)
             {
-                if (txteliminar.Text.Equals(place.puesto))
+                if (txteliminar.Text.Equals(place.puesto) && (place.disponible == 1))
                 {
+                    eliminado = true;
                     lugares.Remove(place);
                     MessageBox.Show("El puesto ha sido eliminado correctamente");
                     txteliminar.Clear();
@@ -54,6 +55,14 @@ namespace Parcheggio
                     break;
                 }
             }
+
+            
+            if (eliminado == false)
+            {
+                MessageBox.Show("El puesto no se pudo eliminar (posiblemente no existe)");
+            }
+
+
         }
         public void llenarArc()
         {

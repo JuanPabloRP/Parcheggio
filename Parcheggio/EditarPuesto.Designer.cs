@@ -67,6 +67,7 @@
             // 
             // txtplaca
             // 
+            this.txtplaca.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtplaca.Location = new System.Drawing.Point(283, 190);
             this.txtplaca.Margin = new System.Windows.Forms.Padding(2);
             this.txtplaca.Name = "txtplaca";
@@ -101,6 +102,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox1.Location = new System.Drawing.Point(283, 265);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
